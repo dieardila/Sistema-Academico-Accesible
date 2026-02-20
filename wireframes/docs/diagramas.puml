@@ -1,1 +1,20 @@
+@startuml
 
+package "Sistema Académico Accesible" {
+
+  [Login]
+  [Dashboard]
+  [Gestión de Cursos]
+  [Detalle Curso]
+  [Crear Curso]
+  [Perfil]
+
+}
+
+Login --> Dashboard
+Dashboard --> Gestión de Cursos
+Gestión de Cursos --> Detalle Curso
+Dashboard --> Crear Curso
+Dashboard --> Perfil
+
+@enduml
